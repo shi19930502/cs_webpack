@@ -1,0 +1,38 @@
+//项目数据存放
+var DATA_ARR=[
+	{
+		indexImg:'',
+		iconImg:'',
+		name:'',
+		text:'',
+		url:'',
+	},{
+		indexImg:'',
+		iconImg:'',
+		name:'',
+		text:'',
+		url:'',
+	}
+]
+var DATA_OBJ={
+	production:[
+		{
+			indexImg:'',
+			iconImg:'',
+			name:'',
+			text:'',
+			url:'',
+			success:'1'
+		}
+	],
+	circulate:[
+		{
+			indexImg:'',
+			iconImg:'',
+			name:'',
+			text:'',
+			url:'',
+			success:'0'
+		}
+	]
+}

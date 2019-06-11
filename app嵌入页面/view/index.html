@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		#include("./layout/link.html")
+	</head>
+	<body>
+		
+		<div class="header">
+			<div class="header_content">
+				<img class="img" id='customerHeadPic' src="../lib/imgs/mine_icon_toux.png" alt="" />
+				<div class="header_right">
+					<div class="header_right_name"><span id='customerInfoName'>空</span></div>
+					<div class="header_right_sc">收藏 &nbsp;<span id='productcollectionCount'>空</span></div>
+				</div>
+			</div>
+			<div class="header_thr">
+				<ul>
+					<li>有效订单</li>
+					<li id='orderCount7Days'>空</li>
+					<li>7日</li>
+				</ul>
+				<ul>
+					<li>支付金额(元)</li>
+					<li id='orderTotalAmount7Days'>空</li>
+					<li>7日</li>
+				</ul>
+				<ul>
+					<li>成交转化率</li>
+					<li id='orderSubmitRadio7Days'>空</li>
+					<li>7日</li>
+				</ul>
+			</div>
+			<div class="header_pj">
+				<div><span id='reviewName_0'>物流速度</span>&nbsp;&nbsp;<span class="span" id='typeScore_0'></span></div>
+				<div><span id='reviewName_1'>商品质量</span>&nbsp;&nbsp;<span class="span" id='typeScore_1'></span></div>
+				<div><span id='reviewName_2'>服务态度</span>&nbsp;&nbsp;<span class="span" id='typeScore_2'></span></div>
+			</div>
+		</div>
+		<div class="order">
+			<div class="order_header">
+				<div class="title_name">订单销量走势</div>
+				<ul>
+					<li class="active">近一周</li>
+					<li>近半月</li>
+					<li>近一月</li>
+				</ul>
+			</div>
+			<div class="order_chart" id='orderChart'>ggg</div>
+		</div>
+		<div class="merchandise">
+			<div class="title_name">商品</div>
+			<div class="content">
+				<ul>
+					<li >在售商品数&nbsp;(件)</li>
+					<li id='saleSKUAllCount'>0</li>
+				</ul>
+				<ul>
+					<li>近30日下单商品占比</li>
+					<li ><span id='saleSKURadio30Days'>0</span>%</li>
+				</ul>
+			</div>
+		</div>
+		<div id='weekList' class="week_list">
+			<div class="title_name">周热销榜</div>
+			<div id='salesSKUSortForWeek'>
+				
+			</div>
+		</div>
+		<div class="merchandise">
+			<div class="title_name">订单与金额</div>
+			<div class="content">
+				<ul>
+					<li>昨日有效订单&nbsp;(笔)</li>
+					<li id='yestodayOrderCount'>0</li>
+				</ul>
+				<ul>
+					<li>昨日销售金额&nbsp;(元)</li>
+					<li id='yestodayOrderTotalAmount'>0</li>
+				</ul>
+			</div>
+		</div>
+		<div id='zfMoneyHeader' class="merchandise">
+			<div class="zf_money_header">
+				<div class="title_name">支付类型与收款金额</div>
+				<ul>
+					<li class="active">昨日</li>
+					<li >近7日</li>
+					<li >近30日</li>
+				</ul>
+			</div>
+			<div class=" zf_money">
+				<ul class="zf_money_top">
+					<li>支付类型</li>
+					<li>订单数&nbsp;(单)</li>
+					<li>金额&nbsp;(元)</li>
+				</ul>
+				<div id='orderList'>
+					
+				</div>
+			</div>
+		</div>
+		<script>
+			var URL_API = 'http://yc.yshfresh.com/api/trade/';
+			var URL_IMG = 'http://yc.yshfresh.com/'
+		</script>
+		#include("./layout/script.html")
+	</body>
+</html>
